@@ -6,6 +6,9 @@ build:
     python: "3.10"
 
 python:
+  system_packages: true
+  sys_path:
+    - ${{ project_slug }}/src
   install:
     - requirements: docs/requirements.txt
     # Install our python package before building the docs
